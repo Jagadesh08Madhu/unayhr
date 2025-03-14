@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <section>
-      <nav className="flex font-lora items-center justify-around py-5 px-6 shadow-lg bg-white relative">
+      <nav className="flex font-lora items-center justify-around py-2 px-6 shadow-lg bg-white relative">
         {/* Logo */}
         <div>
           <img className="w-[150px]" src={logo} alt="Logo" />
@@ -36,7 +36,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-10">
-          <ul style={{ letterSpacing: "3px" }} className="flex items-center text-sm font-semibold gap-10 relative">
+          <ul style={{ letterSpacing: "3px" }} className="flex items-center text-xs font-semibold gap-10 relative">
             {navItems.map((item, index) => (
               <li
                 key={index}
