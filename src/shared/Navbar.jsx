@@ -24,7 +24,7 @@ export default function Navbar() {
   ];
 
   // About submenu items
-  const aboutSubMenu = ["Company", "Team", "Careers"];
+  const aboutSubMenu = ["Cookie policy", "Privacy policy", "General conditions"];
 
   return (
     <section>
@@ -36,7 +36,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-10">
-          <ul style={{ letterSpacing: "3px" }} className="flex items-center text-base font-semibold gap-10 relative">
+          <ul style={{ letterSpacing: "3px" }} className="flex items-center text-sm font-semibold gap-10 relative">
             {navItems.map((item, index) => (
               <li
                 key={index}
@@ -59,7 +59,7 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="absolute left-0 top-5 w-40 bg-white shadow-md rounded-lg p-2"
+                  className="absolute left-0 top-5  bg-white shadow-md rounded-lg p-2"
                 >
                   {aboutSubMenu.map((submenu, index) => (
                     <li key={index} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
