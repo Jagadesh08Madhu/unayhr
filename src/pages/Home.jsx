@@ -21,7 +21,7 @@ export default function Home() {
             <li>Handling Your Legal Requirements in Compliance with UK Regulatory Framework</li>
           </ul>
 
-          <button className='bg-[#244874] text-white px-5 py-1'>Contact</button>
+          <button className='bg-[#244874] text-white px-6 py-2 rounded-xl'>Contact</button>
         </div>
         <div className=''>
           <img className='' src={hero} alt="Hero" />
