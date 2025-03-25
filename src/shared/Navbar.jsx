@@ -50,7 +50,7 @@ export default function Navbar() {
             {/* About Dropdown */}
             <li
               className="relative cursor-pointer hover:text-blue-600 flex items-center gap-1"
-              onMouseEnter={() => setIsAboutOpen(true)}
+              onClick={() => setIsAboutOpen(true)}
               onMouseLeave={() => setIsAboutOpen(false)}
             >
               About <FaChevronDown size={12} />
