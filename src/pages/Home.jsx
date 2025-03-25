@@ -1,11 +1,11 @@
 import React from 'react';
 import hero from '../assets/hero.png';
 import { GiCheckMark } from "react-icons/gi";
-
+import './home.css'
 
 export default function Home() {
   return (
-    <section className='font-lora py-20 bg-[radial-gradient(circle_at_top_left,_rgba(47,146,211,0.3)_110%,_rgba(36,72,116,0.9)_0%)]'>
+    <section className='font-lora py-20 hero '>
       <div className='flex flex-col lg:flex-row justify-center items-center mx-5 lg:mx-20 gap-5'>
         <div className='flex flex-col lg:w-1/2 justify-start items-start gap-5 order-2 lg:order-1'>
           <h1 className='text-lg lg:text-2xl font-semibold'>
