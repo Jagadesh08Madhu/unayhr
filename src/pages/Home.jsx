@@ -2,10 +2,13 @@ import React from 'react';
 import hero from '../assets/hero.png';
 import { GiCheckMark } from "react-icons/gi";
 import './home.css'
+import { div } from 'framer-motion/client';
+import HomeAbout from '../components/HomeAbout';
 
 export default function Home() {
   return (
-    <section className='font-lora py-20  bg-gradient-to-tr from-[#4b98cb] to-white text'>
+    <div>
+      <section className='font-lora py-20  bg-gradient-to-tr from-[#4b98cb] to-white text'>
       <div className='flex flex-col lg:flex-row justify-center items-center mx-5 lg:mx-20 gap-5'>
         <div className='flex flex-col lg:w-1/2 justify-start items-start gap-5 order-2 lg:order-1'>
           <h1 className='text-lg lg:text-2xl font-semibold'>
@@ -41,5 +44,7 @@ export default function Home() {
         </div>
       </div>
     </section>
+    <HomeAbout/>
+    </div>
   );
 }
