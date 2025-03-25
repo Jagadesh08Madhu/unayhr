@@ -1,5 +1,7 @@
 import React from 'react';
 import hero from '../assets/hero.png';
+import { GiCheckMark } from "react-icons/gi";
+
 
 export default function Home() {
   return (
@@ -13,12 +15,23 @@ export default function Home() {
             Empower Your Workforce: Professional HR & Payroll Solutions for Every Stage of the Employee Lifecycle
           </h1>
           <ul className='flex flex-col gap-4'>
-            <li>
+           <div className='flex items-center gap-2'>
+            <span className='text-[#2f92d3]'><GiCheckMark/></span>
+           <li>
               UnayHR is more than just another HR and Payroll software provider. We are your trusted partner, dedicated to
               supporting your businesses at every stage.
             </li>
-            <li>Our wide range of services is designed to simplify and streamline.</li>
-            <li>Handling Your Legal Requirements in Compliance with UK Regulatory Framework</li>
+           </div>
+           <div className='flex items-center gap-2'>
+            <span className='text-[#2f92d3]'><GiCheckMark/></span>
+           <li>Our wide range of services is designed to simplify and streamline.</li>
+           </div>
+
+
+           <div className='flex items-center gap-2'>
+            <span className='text-[#2f92d3]'><GiCheckMark/></span>
+           <li>Handling Your Legal Requirements in Compliance with UK Regulatory Framework</li>
+           </div>
           </ul>
 
           <button className='bg-[#244874] text-white px-6 py-2 rounded-xl'>Contact</button>
