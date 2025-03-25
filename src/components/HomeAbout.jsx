@@ -4,11 +4,11 @@ import { VscActivateBreakpoints } from "react-icons/vsc";
 
 export default function HomeAbout() {
   return (
-    <section className='py-20 font-lora'>
-      <div className='flex gap-5'>
+    <section className='py-20 font-lora mx-5 lg:mx-10'>
+      <div className='flex gap-5 items-center'>
         {/* Image section */}
         <div className='lg:w-1/2'>
-            <img src={about} alt="" />
+            <img src={about} alt="about unayhr" />
         </div>
         {/* Content section */}
         <div className='lg:w-1/2 flex flex-col gap-5'>
