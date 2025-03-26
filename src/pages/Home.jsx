@@ -2,8 +2,8 @@ import React from 'react';
 import hero from '../assets/hero.png';
 import { GiCheckMark } from "react-icons/gi";
 import './home.css'
-import { div } from 'framer-motion/client';
 import HomeAbout from '../components/HomeAbout';
+import Whychoose from '../components/Whychoose';
 
 export default function Home() {
   return (
@@ -45,6 +45,7 @@ export default function Home() {
       </div>
     </section>
     <HomeAbout/>
+    <Whychoose/>
     </div>
   );
 }
