@@ -48,15 +48,15 @@ export default function Homeservices() {
         {Services.map((service, index) => (
           <motion.div
             key={index}
-            className='flex flex-col gap-3 items-center border p-5 rounded-xl border-black'
+            className='flex flex-col gap-3 items-center cursor-pointer border p-5 rounded-xl border-black'
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            whileHover={{ scale: 0.92, boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)' }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            whileHover={{ scale: 0.92, boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)' ,background: "#374151" , color:"white"}}
+            transition={{ duration: 0.3, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
             <img className='w-20' src={service.img} alt={service.heading} />
-            <h1 className='font-semibold text-xl'>{service.heading}</h1>
+            <h1 className='font-semibold text-xl '>{service.heading}</h1>
             <p>{service.content}</p>
           </motion.div>
         ))}

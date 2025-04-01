@@ -6,6 +6,8 @@ import './home.css';
 import HomeAbout from '../components/HomeAbout';
 import Whychoose from '../components/Whychoose';
 import Homeservices from '../components/Homeservices';
+import HomeIndustry from '../components/HomeIndustry';
+import LastAbout from '../components/LastAbout';
 
 export default function Home() {
 
@@ -72,8 +74,10 @@ export default function Home() {
         </motion.div>
       </section>
       <HomeAbout/>
-<Whychoose/>
-<Homeservices/>
+      <Whychoose/>
+      <Homeservices/>
+      <LastAbout/>
+      <HomeIndustry/>
     </div>
   );
 }
