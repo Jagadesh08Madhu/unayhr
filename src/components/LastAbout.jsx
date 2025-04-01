@@ -22,7 +22,7 @@ export default function LastAbout() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-            <h1 className='text-2xl lg:text-4xl font-bold text-gray-800'>End-to-End HR & Payroll Solutions: Compliance, Efficiency, and Growth</h1>
+            <h1 className='text-xl lg:text-2xl font-bold text-gray-800'>End-to-End HR & Payroll Solutions: Compliance, Efficiency, and Growth</h1>
             <div className='space-y-4'>
                 {[
                     { title: "Comprehensive HR and Payroll Solutions", text: "Tailored for every stage of the employee lifecycle." },
@@ -39,8 +39,8 @@ export default function LastAbout() {
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       viewport={{ once: true }}
                     >
-                        <h2 className='text-xl font-semibold text-gray-700'>{item.title}</h2>
-                        <p className='text-gray-600'>{item.text}</p>
+                        <h2 className='text-lg font-semibold text-gray-700'>{item.title}</h2>
+                        <p className='text-gray-600 text-sm'>{item.text}</p>
                     </motion.div>
                 ))}
             </div>

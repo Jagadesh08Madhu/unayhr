@@ -43,7 +43,7 @@ export default function Homeservices() {
 
   return (
     <section className='font-lora lg:mx-10 mx-5 py-20'>
-      <h1 className='text-3xl lg:text-5xl text-center py-5'>Our Professional Services</h1>
+      <h1 className='text-xl lg:text-3xl text-center py-5'>Our Professional Services</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
         {Services.map((service, index) => (
           <motion.div
@@ -56,8 +56,8 @@ export default function Homeservices() {
             viewport={{ once: true }}
           >
             <img className='w-20' src={service.img} alt={service.heading} />
-            <h1 className='font-semibold text-xl '>{service.heading}</h1>
-            <p>{service.content}</p>
+            <h1 className='font-semibold lg:text-lg  text-base'>{service.heading}</h1>
+            <p className='text-sm'>{service.content}</p>
           </motion.div>
         ))}
       </div>
