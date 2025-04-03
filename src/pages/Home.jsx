@@ -8,6 +8,7 @@ import Whychoose from '../components/Whychoose';
 import Homeservices from '../components/Homeservices';
 import HomeIndustry from '../components/HomeIndustry';
 import LastAbout from '../components/LastAbout';
+import Blog from '../components/Blog';
 
 export default function Home() {
 
@@ -78,6 +79,7 @@ export default function Home() {
       <Homeservices/>
       <LastAbout/>
       <HomeIndustry/>
+      <Blog/> 
     </div>
   );
 }
