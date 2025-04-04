@@ -3,6 +3,7 @@ import Main from "../layouts/Main";
 import Home from "../pages/Home";
 import Pricing from "../pages/Pricing";
 import Contact from "../pages/Contact";
+import { Checkout } from "../pages/Checkout";
 
 export const router = createBrowserRouter([
     {
@@ -20,7 +21,11 @@ export const router = createBrowserRouter([
             {
                 path:"/contact",
                 element:<Contact/>
-            }
+            },
+           {
+            path:"/checkout",
+            element:<Checkout/>
+           }
         ]
     }
 ])
