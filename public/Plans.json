@@ -1,0 +1,97 @@
+{
+    "plans": [
+      {
+        "name": "STANDARD",
+        "price_per_month": "£15 GBP",
+        "employees": "Upto 5 Employee",
+        "features": [
+          "Primary Dashboard",
+          "Employee Database & Profile",
+          "Company Setup",
+          "Staff Work Schedule",
+          "Staff Panel",
+          "Attendance Management",
+          "Holiday time management",
+          "Payslip (custom design)",
+          "Reports",
+          "Training",
+          "Quick Support"
+        ],
+        "price_per_year": "£120/YEAR",
+        "original_price": "£125.00",
+        "current_price": "£120.00"
+      },
+      {
+        "name": "PROFESSIONAL",
+        "price_per_month": "£25 GBP",
+        "employees": "Upto 10 Employee",
+        "features": [
+          "Primary Dashboard",
+          "Employee Database & Profile",
+          "Company Setup",
+          "Staff Work Schedule",
+          "Staff Panel",
+          "Attendance Management",
+          "Holiday time management",
+          "Payslip (custom design)",
+          "Reports",
+          "Unlimited Training",
+          "Quick Support",
+          "Dedicated Relationship Manager",
+          "Reporting Duties as a licenced sponsored"
+        ],
+        "price_per_year": "£300/YEAR",
+        "original_price": "£310.00",
+        "current_price": "£300.00"
+      },
+      {
+        "name": "ENTERPRISE",
+        "price_per_month": "£35 GBP",
+        "employees": "Upto 20 Employee",
+        "features": [
+          "Primary Dashboard",
+          "Employee Database & Profile",
+          "Company Setup",
+          "Staff Work Schedule",
+          "Staff Panel",
+          "Attendance Management",
+          "Holiday time management",
+          "Payslip (custom design)",
+          "Reports",
+          "Unlimited Training",
+          "Reporting Duties as a licenced sponsored",
+          "Dedicated Relationship Manager",
+          "Quick Response Support",
+          "Expert advisors 30 free min advice (if needed)"
+        ],
+        "price_per_year": "£420/YEAR",
+        "original_price": "£430.00",
+        "current_price": "£420.00"
+      },
+      {
+        "name": "EXPRESS",
+        "price_per_month": "£49 GBP",
+        "employees": "Unlimited employee",
+        "features": [
+          "Primary Dashboard",
+          "Employee Database & Profile",
+          "Company Setup",
+          "Staff Work Schedule",
+          "Staff Panel",
+          "Attendance Management",
+          "Holiday time management",
+          "Payslip (custom design)",
+          "Reports",
+          "Unlimited Training",
+          "Reporting Duties as a licenced sponsored",
+          "Dedicated Relationship Manager",
+          "Dedicated Quick Response Unit",
+          "Expert advisors 30 free min advice (if needed)"
+        ],
+        "price_per_year": "£49/MONTH ONLY",
+        "original_price": "£52.00",
+        "current_price": "£49.00"
+      }
+    ]
+  }
+  

@@ -92,7 +92,7 @@ export default function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="absolute top-28 left-0 w-full bg-white shadow-md md:hidden"
+            className="absolute top-24 left-0 w-full bg-white shadow-md md:hidden"
           >
             <ul className="flex flex-col items-center gap-5 py-5">
               {navItems.map((item, index) => (
