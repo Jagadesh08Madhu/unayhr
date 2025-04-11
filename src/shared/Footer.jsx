@@ -62,10 +62,10 @@ export default function Footer() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className='flex flex-col justify-center items-center'
+          className='flex flex-col justify-center lg:items-center'
         >
           <h1 className="text-2xl font-bold ">Quick Links</h1>
-          <ul className="space-y-2">
+          <ul className="space-y-2 mt-2">
             {Items.map((item, index) => (
               <li
               onClick={()=>navigate(item.link)}

@@ -96,13 +96,13 @@ export default function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="absolute top-24 left-0 w-full bg-white shadow-md md:hidden"
+            className="absolute top-[77.5px] left-0 w-full bg-gray-800 shadow-md md:hidden"
           >
             <ul className="flex flex-col items-center gap-5 py-5">
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="cursor-pointer hover:text-blue-600"
+                  className="cursor-pointer "
                   onClick={() => {
                     setIsMenuOpen(false);
                     navigate(item.path);
@@ -114,7 +114,7 @@ export default function Navbar() {
 
               {/* Mobile About Dropdown */}
               <li
-                className="relative cursor-pointer hover:text-blue-600 flex flex-col items-center gap-1"
+                className="relative cursor-pointer  flex flex-col items-center gap-1"
                 onClick={() => setIsAboutOpen(!isAboutOpen)}
               >
                 <div className="flex items-center gap-1">
@@ -128,7 +128,7 @@ export default function Navbar() {
                     className="mt-2 w-40 bg-white shadow-md rounded-lg p-2"
                   >
                     {aboutSubMenu.map((submenu, index) => (
-                      <li key={index} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                      <li key={index} className="px-4 py-2 text-black hover:bg-gray-100 cursor-pointer">
                         {submenu}
                       </li>
                     ))}

@@ -55,8 +55,8 @@ export function Checkout() {
     <section className='py-10 lg:mx-20 mx-5 font-alice'>
       <div className='flex gap-10 flex-col lg:flex-row'>
         {/* Checkout Form */}
-        <div className='lg:w-1/2 shadow-lg p-5 border-t-4 rounded-md border-[#7043c3]'>
-          <h1 className='text-xl text-[#7043c3] lg:text-3xl mb-5'>Personal Information</h1>
+        <div className='lg:w-1/2 shadow-lg p-5 border-t-4 order-2 lg:order-1 rounded-md border-gray-800'>
+          <h1 className='text-xl text-gray-800 lg:text-3xl mb-5'>Personal Information</h1>
           <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
             {['fullName', 'email', 'password', 'confirmPassword'].map((field) => (
               <div key={field} className='flex flex-col gap-2'>
@@ -68,7 +68,7 @@ export function Checkout() {
                   placeholder={`Enter your ${field.replace('Name', ' name')}`}
                   value={formData[field]}
                   onChange={handleChange}
-                  className={`border transition-all ease-in-out duration-200 focus:border-[#7043c3] outline-none px-5 rounded-xl py-2 ${errors[field] ? 'border-red-500' : ''}`}
+                  className={`border transition-all ease-in-out duration-200 focus:border-gray-800 outline-none px-5 rounded-xl py-2 ${errors[field] ? 'border-red-500' : ''}`}
                 />
                 {errors[field] && <p className='text-red-500 text-sm'>{errors[field]}</p>}
               </div>
@@ -85,8 +85,8 @@ export function Checkout() {
         </div>
 
         {/* Order Details */}
-        <div className='lg:w-1/2 shadow-lg px-5 lg:px-10 py-5 border-t-4 rounded-md border-[#7043c3]'>
-          <h1 className='text-xl text-[#7043c3] lg:text-3xl mb-5'>Order Details</h1>
+        <div className='lg:w-1/2 shadow-lg px-5 lg:px-10 py-5 border-t-4 rounded-md border-gray-800 order-1 lg:order-2'>
+          <h1 className='text-xl text-gray-800 lg:text-3xl mb-5'>Order Details</h1>
           <div className='flex flex-col gap-4'>
             <h1>{plan.name}</h1>
             <h1>{plan.price_per_month}/per month</h1>
