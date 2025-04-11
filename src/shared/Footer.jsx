@@ -37,7 +37,7 @@ export default function Footer() {
     },
   ]
   return (
-    <section className="py-20 px-5 lg:px-20 font-lora bg-gradient-to-tr from-[#4b98cb] to-white text-gray-900">
+    <section className="py-20 px-5 lg:px-20 font-lora bg-[#1F2937] text-white">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

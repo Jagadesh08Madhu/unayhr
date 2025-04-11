@@ -28,14 +28,14 @@ export default function Navbar() {
 
   return (
     <section>
-      <nav style={{zIndex:"1000"}} className="bg-gradient-to-r sticky py-5 z-50 top-0 left-0 w-full from-gray-900 font-lora flex justify-around items-center via-gray-700 to-gray-900 text-white shadow-md shadow-gray-400">
+      <nav style={{zIndex:"1000"}} className="bg-gradient-to-r sticky py-6 z-50 top-0 left-0 w-full from-gray-900 font-lora flex justify-around items-center via-gray-700 to-gray-900 text-white shadow-md shadow-gray-400">
         {/* Logo */}
         <div>
           {/* <img className="w-[150px]" src={logo} alt="Logo" /> */}
           <h1
            style={{letterSpacing:"7px"}} 
            onClick={()=>navigate("/")}
-           className="text-base select-none cursor-pointer"> <span className="text-indigo-400">UNAYHR</span> PAYROLL  </h1>
+           className="text-base select-none cursor-pointer">UNAYHR PAYROLL  </h1>
         </div>
 
         {/* Desktop Menu */}
