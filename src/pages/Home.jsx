@@ -43,13 +43,12 @@ const slides = [
 export default function Home() {
   const [index, setIndex] = useState(0);
 
-  // Auto slide effect
+  // Auto slide every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
-
-    return () => clearInterval(interval); // Cleanup on unmount
+    }, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   const containerVariants = {
@@ -111,6 +110,18 @@ export default function Home() {
               </motion.div>
             </motion.div>
           </AnimatePresence>
+
+          {/* Dots Indicator */}
+          <div className="flex justify-center mt-6 space-x-2">
+            {slides.map((_, i) => (
+              <div
+                key={i}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  i === index ? 'bg-[#244874]' : 'bg-gray-400'
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 

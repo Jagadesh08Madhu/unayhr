@@ -1,6 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { CiLocationArrow1 } from "react-icons/ci";
+import { MdLocalPhone ,MdOutlineAttachEmail  } from "react-icons/md";
+
+
 
 export default function Footer() {
 
@@ -48,7 +52,7 @@ export default function Footer() {
           <p className="italic text-lg mb-3">
             "Empowering your workforce, simplifying your payroll. Let us handle the numbers while you focus on what matters most." 💼
           </p>
-          <p className='text-base'>
+          <p className='text-sm'>
             At UnayHR Payroll, we believe that payroll isn't just about numbers—it's about people. From accurate salary processing to compliance
             management, we offer seamless solutions tailored for your business needs. 
           </p>
@@ -58,13 +62,14 @@ export default function Footer() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
+          className='flex flex-col justify-center items-center'
         >
           <h1 className="text-2xl font-bold mb-4">Quick Links</h1>
           <ul className="space-y-2">
             {Items.map((item, index) => (
               <li
               onClick={()=>navigate(item.link)}
-              key={index} className="cursor-pointer hover:text-gray-300  duration-300 text-base transition-colors">
+              key={index} className="cursor-pointer hover:text-gray-300  duration-300 text-sm transition-colors">
                 {item.name}
               </li>
             ))}
@@ -77,13 +82,29 @@ export default function Footer() {
           transition={{ duration: 0.7, delay: 0.2 }}
         >
           <h1 className="text-2xl font-bold mb-4">Registered Address</h1>
-          <p className="mb-3 text-base">
-            115 Stevens Road, Dagenham<br />
-            RM8 2PU, London,<br />
-            United Kingdom.
-          </p>
-          <p className="mb-1 text-base">Phone: +44 203 290 1158</p>
-          <p className='text-base'>Email: <a href="mailto:unayhr-support@gmail.com" className="underline hover:text-blue-800">unayhr-support@gmail.com</a></p>
+            <div className='flex flex-col gap-3'>
+              <div className='flex items-center gap-3'>
+                <span className='text-2xl'><CiLocationArrow1/></span>
+                <a target='_blank' href="https://www.google.com/maps/dir//115+Stevens+Rd+Dagenham+RM8+2PU+UK/@51.5592352,0.0364216,16495m/data=!3m2!1e3!4b1!4m9!4m8!1m0!1m5!1m1!1s0x47d8a44a8c351c35:0x4d5203225163b7a7!2m2!1d0.1188223!2d51.5591573!3e9?entry=ttu&g_ep=EgoyMDI1MDQwOC4wIKXMDSoASAFQAw%3D%3D">115 Stevens Road, Dagenham
+                  RM8 2PU, London,
+                  United Kingdom.</a>
+              </div>
+              <div className='flex items-center gap-3'>
+                <span className='text-2xl'><MdLocalPhone/></span>
+                <a target='_blank'  href="tel:+422032901158">Phone: +422032901158</a>
+              </div>
+              <div className='flex items-center gap-3'>
+                <span className='text-2xl'><MdOutlineAttachEmail /></span>
+                <a 
+                  href="mailto:unayhr-support@gmail.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                >
+                  Email: unayhr-support@gmail.com
+                </a>
+
+              </div>
+            </div>
         </motion.div>
 
         <motion.div
