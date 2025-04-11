@@ -41,7 +41,7 @@ export default function Footer() {
     },
   ]
   return (
-    <section className="py-20 px-5 lg:px-20 font-lora bg-[#1F2937] text-white">
+    <section className="pt-20 pb-5 px-5 lg:px-20 font-lora bg-[#1F2937] text-white">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -64,7 +64,7 @@ export default function Footer() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className='flex flex-col justify-center items-center'
         >
-          <h1 className="text-2xl font-bold mb-4">Quick Links</h1>
+          <h1 className="text-2xl font-bold ">Quick Links</h1>
           <ul className="space-y-2">
             {Items.map((item, index) => (
               <li
@@ -119,6 +119,10 @@ export default function Footer() {
 
           <p className='text-base'>For assistance or inquiries regarding payroll, feel free to call or message us anytime! 💼📞✨</p>
         </motion.div>
+      </div>
+
+      <div className='flex justify-center items-center border-t-2 pt-5 mt-5'>
+        <p>© 2025 UnayHr Payroll. All rights reserved.</p>
       </div>
     </section>
   );
