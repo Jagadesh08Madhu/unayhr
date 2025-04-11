@@ -32,7 +32,10 @@ export default function Navbar() {
         {/* Logo */}
         <div>
           {/* <img className="w-[150px]" src={logo} alt="Logo" /> */}
-          <h1 style={{letterSpacing:"5px"}}>UNAYHR</h1>
+          <h1
+           style={{letterSpacing:"7px"}} 
+           onClick={()=>navigate("/")}
+           className="text-base select-none cursor-pointer"> <span className="text-indigo-400">UNAYHR</span> PAYROLL  </h1>
         </div>
 
         {/* Desktop Menu */}
@@ -41,7 +44,7 @@ export default function Navbar() {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className={`cursor-pointer transition-all duration-300 ease-in-out hover:text-blue-600 px-4 py-1 ${isActive(item.path) ? "bg-[#E1E9EC] scale-105 text-black" : ""}`}
+                className={`cursor-pointer transition-all duration-300 ease-in-out hover:text-blue-600 px-4 py-1 ${isActive(item.path) ? "bg-[#E1E9EC] rounded-md scale-105 text-black" : ""}`}
                 onClick={() => navigate(item.path)}
               >
                 {item.name}
