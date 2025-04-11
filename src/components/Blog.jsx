@@ -98,7 +98,7 @@ export default function Blog() {
     ];
 
     return (
-        <section className="mx-5 lg:mx-20 lg:py-14">
+        <section className="mx-5 lg:mx-20 font-lora lg:py-14">
             <h1 className="text-2xl text-center lg:text-4xl font-bold mb-6">Recent Blogs</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {Blogs.map((blog, index) => (

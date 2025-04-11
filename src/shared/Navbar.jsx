@@ -28,10 +28,11 @@ export default function Navbar() {
 
   return (
     <section>
-      <nav className="flex font-lora items-center justify-around py-2 px-6 shadow-lg bg-white relative">
+      <nav style={{zIndex:"1000"}} className="bg-gradient-to-r sticky py-5 z-50 top-0 left-0 w-full from-gray-900 font-lora flex justify-around items-center via-gray-700 to-gray-900 text-white shadow-md shadow-gray-400">
         {/* Logo */}
         <div>
-          <img className="w-[150px]" src={logo} alt="Logo" />
+          {/* <img className="w-[150px]" src={logo} alt="Logo" /> */}
+          <h1 style={{letterSpacing:"5px"}}>UNAYHR</h1>
         </div>
 
         {/* Desktop Menu */}
@@ -40,7 +41,7 @@ export default function Navbar() {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className={`cursor-pointer transition-all duration-300 ease-in-out hover:text-blue-600 px-4 py-1 ${isActive(item.path) ? "bg-[#E1E9EC] scale-105 text-[#045cb4]" : ""}`}
+                className={`cursor-pointer transition-all duration-300 ease-in-out hover:text-blue-600 px-4 py-1 ${isActive(item.path) ? "bg-[#E1E9EC] scale-105 text-black" : ""}`}
                 onClick={() => navigate(item.path)}
               >
                 {item.name}
