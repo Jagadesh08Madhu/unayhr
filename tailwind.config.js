@@ -10,6 +10,7 @@ export default {
         alice:["Alice" , "serif"],
         lora:["Lora" , "serif"],
         Sacramento:["Sacramento" , "serif"],
+        Inter:["Inter" , "sans-serif"],
       }
     },
   },

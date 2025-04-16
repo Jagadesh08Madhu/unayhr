@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <section>
-      <nav style={{zIndex:"1000"}} className="bg-gradient-to-r sticky py-6 z-50 top-0 left-0 w-full from-gray-900 font-lora flex justify-around items-center via-gray-700 to-gray-900 text-white shadow-md shadow-gray-400">
+        <nav style={{zIndex:"1000"}} className="bg-gradient-to-r sticky py-6 z-50 top-0 left-0 w-full from-[#00051F]  via-[#00051F] to-[#00051F] font-lora flex justify-around items-center text-white shadow-md shadow-[#2e3453]">
         {/* Logo */}
         <div>
           {/* <img className="w-[150px]" src={logo} alt="Logo" /> */}
@@ -96,7 +96,7 @@ export default function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="absolute top-[77.5px] left-0 w-full bg-gray-800 shadow-md md:hidden"
+            className="absolute top-[77.5px] left-0 w-full bg-[#00051F] shadow-md md:hidden"
           >
             <ul className="flex flex-col items-center gap-5 py-5">
               {navItems.map((item, index) => (
