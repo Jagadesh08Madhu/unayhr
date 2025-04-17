@@ -51,7 +51,7 @@ export default function Homeservices() {
             className='flex flex-col gap-3 items-center cursor-pointer border p-5 rounded-xl border-black'
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            whileHover={{ scale: 0.92, boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)' ,background: "#374151" , color:"white"}}
+            whileHover={{ scale: 0.92, boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)' ,background: "#000B2A" , color:"white"}}
             transition={{ duration: 0.3, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
