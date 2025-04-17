@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Pricing from "../pages/Pricing";
 import Contact from "../pages/Contact";
 import { Checkout } from "../pages/Checkout";
+import Compliance from "../pages/Compliance";
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
            {
             path:"/checkout",
             element:<Checkout/>
+           },
+           {
+            path:"/compliance",
+            element: <Compliance/>
            }
         ]
     }

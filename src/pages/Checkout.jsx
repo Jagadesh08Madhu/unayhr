@@ -77,7 +77,7 @@ export function Checkout() {
             <button
               type='submit'
               disabled={isButtonDisabled}
-              className='bg-[#7043c3] rounded-xl py-2 text-white disabled:bg-gray-400'
+              className='bg-[#00051F] rounded-xl py-2 text-white disabled:bg-gray-400'
             >
               Proceed to Pay
             </button>
