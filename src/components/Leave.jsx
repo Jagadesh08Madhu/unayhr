@@ -24,7 +24,7 @@ export default function Leave() {
 
   return (
     <motion.section 
-      className='bg-[#000B2A] text-white font-lora py-10'
+      className='bg-[#000B2A] text-white z-50 font-lora py-10'
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}

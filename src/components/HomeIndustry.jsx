@@ -45,7 +45,7 @@ export default function HomeIndustry() {
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.3 }}
                         />
-                        <h2 className='text-base lg:text-lg font-semibold text-center'>{industry.heading}</h2>
+                        <h2 className='text-base lg:text-lg font-semibold text-center text-[#2c55c4]'>{industry.heading}</h2>
                         <p className='text-center text-sm text-gray-600'>{industry.content}</p>
                     </motion.div>
                 ))}

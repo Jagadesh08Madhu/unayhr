@@ -109,8 +109,8 @@ const navigate = useNavigate();
 
       <HomeAbout />
       <Leave/>
-      <Whychoose />
       <Homeservices />
+      <Whychoose />
       <LastAbout />
       <HomeIndustry />
       <Blog />
