@@ -18,32 +18,32 @@ export default function HomeAbout() {
   return (
     <section className='py-20 font-lora mx-5 lg:mx-10'>
       <motion.div 
-        className='flex flex-col lg:flex-row gap-5 items-center'
+        className='flex flex-col lg:flex-row gap-5 '
         initial='hidden' 
         whileInView='visible' 
         viewport={{ once: true, amount: 0.3 }}
         variants={containerVariants}
       >
         {/* Image section */}
-        <motion.div className='lg:w-1/2' variants={itemVariants}>
+        <motion.div className='lg:w-1/2 sticky top-0 self-start' variants={itemVariants}>
           <img src={about} alt="about unayhr" />
         </motion.div>
 
         {/* Content section */}
         <motion.div className='lg:w-1/2 flex flex-col gap-5' variants={itemVariants}>
           <h1 className='text-2xl lg:text-4xl'>
-            Empower your workflow with <span className='text-[#2f92d3]'>UnayHR Payroll</span>
+            Empower your workflow with <span className='text-[#273ea3]'>UnayHR Payroll</span>
           </h1>
 
           <ul className='flex flex-col gap-3'>
             {[
               'UnayHR Payroll manages employees salaries, wages, bonuses',
-              'Runs Unlimited Payslips effectively',
-              'Manages employee Time management',
-              'Manages employee Holiday management',
-              'Manage Employee Task',
-              'Attendance Management',
-              'Dedicated Staff Private Panel for Payslip Privacy',
+              'Auto-run payslips based on attendance',
+              'Option for manual payslip generation for flexibility',
+              'Time & Attendance Management',
+              'Rota & Holiday Management',
+              'Employee Task Tracking',
+              'Dedicated staff panel for payslip privacy',
               'Customized Payslip Design',
               'Print Payslip in Multilanguage (16 Languages)',
               'Unlimited Dedicated Training and Support'

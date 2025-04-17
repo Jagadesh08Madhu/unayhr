@@ -12,6 +12,7 @@ import center from '../assets/home/center.png'
 import right from '../assets/home/right.png'
 import rbottom from '../assets/home/rbottom.png'
 import { useNavigate } from 'react-router-dom';
+import Leave from '../components/Leave';
 
 // const slides = [
 //   {
@@ -56,7 +57,7 @@ const navigate = useNavigate();
           <h1 style={{letterSpacing:"5px"}} className='text-4xl font-semibold'>Payroll simplified, efficient, and compliant</h1>
           <p className='text-lg leading-loose'>Streamline your payroll operations and empower your workforce with UnayHR's modern payroll solutions—designed for
              growing businesses.</p>
-            <div className='flex gap-10'>
+            <div className='flex flex-col gap-5 w-full md:flex-row md:w-fit lg:gap-10'>
               <button
               onClick={()=>navigate("/pricing")}
               style={{letterSpacing:"5px"}} className='bg-white rounded-md text-[#101941] px-6 py-3 text-sm lg:text-lg'>Our Pricing</button>
@@ -107,6 +108,7 @@ const navigate = useNavigate();
       </section>
 
       <HomeAbout />
+      <Leave/>
       <Whychoose />
       <Homeservices />
       <LastAbout />
