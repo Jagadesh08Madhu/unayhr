@@ -44,7 +44,9 @@ export default function Footer() {
     <section className=" pb-5 px-5 lg:px-20 font-lora bg-[#101941] text-white">
       <div className='flex flex-col gap-5  items-center py-10  pt-20'>
         <h1 className='text-4xl lg:w-1/2 text-center'>UnayHR payroll system for growing businesses</h1>
-        <button className='border px-6 rounded-lg py-3'>Contact Us</button>
+        <button
+        onClick={()=>navigate("/contact")}
+        className='border px-6 rounded-lg py-3'>Contact Us</button>
         <div className='bg-white h-[1px] mt-10 lg:mt-28 w-full'></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
