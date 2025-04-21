@@ -32,7 +32,7 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <motion.div 
               initial ={{opacity:0 , y:40}}
-              whileInView ={{opacity:1 , y:0}}
+              animate ={{opacity:1 , y:0}}
               transition={{duration:0.8, delay :index * 0.3}}
               key={index} 
               className="border rounded-2xl shadow-lg bg-white flex flex-col"

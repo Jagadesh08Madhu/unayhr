@@ -66,7 +66,7 @@ const PricingFaq = () => {
           return (
             <motion.div
               key={index}
-              className="border-b border-slate-200 overflow-hidden"
+              className="border px-4 shadow-md my-2 rounded-lg border-slate-200 overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}

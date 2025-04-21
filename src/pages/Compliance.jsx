@@ -1,12 +1,14 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import payslip from '../assets/payslip.png'
+import ComplianceContent from '../components/ComplianceContent'
 
 export default function Compliance() {
 
     const navigate = useNavigate()
   return (
-    <section className='py-10 font-lora bg-[#00051F]'>
+    <div>
+      <section className='py-10 font-lora bg-[#00051F]'>
       <div className='flex flex-col text-white gap-5 mx-5 lg:px-20 justify-center items-center'>
         <h1 className='bg-[#1f295b] w-fit px-5 py-1 rounded-full text-white'>Payroll Compliance</h1>
         <h1 className='text-4xl text-center'>Make payroll stress-free</h1>
@@ -26,5 +28,7 @@ export default function Compliance() {
             <img className='md:w-2/3 rounded-xl' src={payslip} alt="" />
       </div>
     </section>
+    <ComplianceContent/>
+    </div>
   )
 }
