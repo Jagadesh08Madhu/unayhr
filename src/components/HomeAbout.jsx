@@ -25,7 +25,7 @@ export default function HomeAbout() {
         variants={containerVariants}
       >
         {/* Image section */}
-        <motion.div className='lg:w-1/2 sticky top-0 self-start' variants={itemVariants}>
+        <motion.div className='lg:w-1/2 ' variants={itemVariants}>
           <img src={about} alt="about unayhr" />
         </motion.div>
 

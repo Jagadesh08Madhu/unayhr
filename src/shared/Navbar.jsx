@@ -70,7 +70,7 @@ export default function Navbar() {
               onMouseEnter={() => setIsAboutOpen(true)}
               onMouseLeave={() => setIsAboutOpen(false)}
             >
-              About <FaChevronDown size={12} />
+              Our Policy <FaChevronDown size={12} />
               {isAboutOpen && (
                 <motion.ul
                   initial={{ opacity: 0, y: -10 }}
@@ -151,7 +151,7 @@ export default function Navbar() {
                   className="flex items-center gap-1"
                   onClick={() => setIsAboutOpen(!isAboutOpen)}
                 >
-                  About{" "}
+                  Our Policy{" "}
                   <FaChevronDown
                     size={12}
                     className={`${

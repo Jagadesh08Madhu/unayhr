@@ -14,37 +14,6 @@ import rbottom from '../assets/home/rbottom.png'
 import { useNavigate } from 'react-router-dom';
 import Leave from '../components/Leave';
 
-// const slides = [
-//   {
-//     title: "HR Compliance for UKVI Sponsorship",
-//     subtitle: "Empower Your Workforce: Professional HR & Payroll Solutions for Every Stage of the Employee Lifecycle",
-//     points: [
-//       'UnayHR is more than just another HR and Payroll software provider. We are your trusted partner, dedicated to supporting your businesses at every stage.',
-//       'Our wide range of services is designed to simplify and streamline.',
-//       'Handling Your Legal Requirements in Compliance with UK Regulatory Framework'
-//     ]
-//   },
-//   {
-//     title: "Efficient Onboarding and Payroll",
-//     subtitle: "Streamline Your HR Process with Automated Payroll, Compliance, and Onboarding Tools",
-//     points: [
-//       'Onboard employees quickly with a paperless system.',
-//       'Automate salary calculations and payslips.',
-//       'Ensure full compliance with UK labor laws.'
-//     ]
-//   },
-//   {
-//     title: "Dedicated Support & Insights",
-//     subtitle: "Make Data-Driven HR Decisions with Real-Time Reports and Expert Support",
-//     points: [
-//       'Access insights on workforce trends and compliance.',
-//       'Work with our dedicated HR experts to solve challenges.',
-//       'Stay ahead with predictive analytics and HR forecasting.'
-//     ]
-//   }
-// ];
-
-
 export default function Home() {
 
 const navigate = useNavigate();
@@ -53,7 +22,7 @@ const navigate = useNavigate();
     <div>
       <section className='font-lora py-20 bg-[#101941] text-white'>
 
-        <div className='flex flex-col gap-8 justify-center mx-5 lg:mx-0 text-center md:text-left items-center'>
+        <div className='flex flex-col gap-8 h-[70vh] justify-center mx-5 lg:mx-0 text-center md:text-left items-center'>
           <h1 style={{letterSpacing:"5px"}} className='text-4xl font-semibold'>Payroll simplified, efficient, and compliant</h1>
           <p className='text-lg leading-loose'>Streamline your payroll operations and empower your workforce with UnayHR's modern payroll solutions—designed for
              growing businesses.</p>
