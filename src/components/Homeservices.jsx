@@ -48,7 +48,7 @@ export default function Homeservices() {
         {Services.map((service, index) => (
           <motion.div
             key={index}
-            className='flex flex-col gap-3 items-center cursor-pointer border p-5 rounded-xl border-black'
+            className='flex flex-col gap-3 items-center cursor-pointer border p-5 rounded-xl'
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             whileHover={{ scale: 0.92, boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)' ,background: "#000B2A" , color:"white"}}
