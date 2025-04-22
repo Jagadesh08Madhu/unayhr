@@ -42,7 +42,7 @@ export default function Homeservices() {
   ];
 
   return (
-    <section className='font-lora lg:mx-10 mx-5 py-20'>
+    <section className='font-lora md:container md:mx-auto mx-5 py-10 lg:py-20'>
       <h1 className='text-xl lg:text-3xl text-center py-5'>Our Professional Services</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
         {Services.map((service, index) => (

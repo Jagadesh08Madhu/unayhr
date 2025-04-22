@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import about from '../assets/about.png';
+import about from '../assets/about.webp';
 import { VscActivateBreakpoints } from "react-icons/vsc";
 
 export default function HomeAbout() {
@@ -16,7 +16,7 @@ export default function HomeAbout() {
   };
 
   return (
-    <section className='py-20 font-lora mx-5 lg:mx-10'>
+    <section className='py-10 lg:py-20 font-lora mx-5 md:container md:mx-auto'>
       <motion.div 
         className='flex flex-col lg:flex-row gap-5 '
         initial='hidden' 

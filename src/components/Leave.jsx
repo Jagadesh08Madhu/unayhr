@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import leave from '../assets/leave.png';
+import leave from '../assets/leave.webp';
 
 export default function Leave() {
   const containerVariants = {
@@ -30,7 +30,7 @@ export default function Leave() {
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
-      <div className='flex flex-col justify-center items-center gap-5 lg:mx-20 mx-5'>
+      <div className='flex flex-col justify-center items-center gap-5 md:container md:mx-auto mx-5'>
         <motion.h1 className='text-lg' variants={itemVariants}>
           Leave and Attendance
         </motion.h1>

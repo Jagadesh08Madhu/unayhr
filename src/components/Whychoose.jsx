@@ -4,7 +4,7 @@ import whychoose from '../assets/whychoose.png'
 
 export default function Whychoose() {
   return (
-    <section className='bg-[#000B2A] py-20 font-lora text-white'>
+    <section className='bg-[#000B2A] py-10 lg:py-20 font-lora text-white'>
       <div className='flex flex-col lg:mx-20 mx-5'>
         <motion.div 
           className='flex flex-col lg:flex-row items-center justify-between'
